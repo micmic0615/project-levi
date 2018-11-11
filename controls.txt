@@ -1,0 +1,7 @@
+controls:
+
+movement -> wasd
+atacc -> left click
+experimental shield -> right click
+dash -> spacebar/double tap wasd
+reload game -> escape

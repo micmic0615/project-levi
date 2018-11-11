@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: #ccc;
+                background-color: #444
+            }
+
+            .notes {
+                width: 800px;
+                margin: 0 auto;
+            }
+
+            .main, .title {
+                width: 100%;
+                display: block;
+                float: left
+            }
+
+            .title {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .title > .subtitle {
+                font-size: 16px;
+                display: block
+            }
+
+            .main > li {
+                margin-bottom: 15px
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+           <div class="notes">
+                <div class="title">
+                    <b>0.2.6</b>    
+                    <i class="subtitle">Nov 11 2018</i>
+                </div>
+                <ul class="main">
+                    <li>
+                        changed dash control scheme
+                        <ul>
+                            <li>
+                                from right click to spacebar/double tap wasd
+                            </li>
+                            <li>
+                                pressing spacebar will trigger dash in your current facing direction
+                            </li>
+                            <li>
+                                double tapping wasd will trigger dash in one of the four cardinal directions
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        limited dashing to three consecutive dashes (it will go in a 1 second cooldown afterwards)
+                    </li>
+
+                    <li>
+                        nerfed dash bullets
+
+                        <ul>
+                            <li>significanty nerfed dash bullet damage</li>
+                            <li>dash bullets now come in 3/4/5 waves instead of constantly shooting 5 bullets </li>
+                            <li>dash bullets now have zero poise damage</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        significantly buffed movespeed (200 -> 600)
+                        <ul>
+                            <li>on-dash/on-attack speedboost nerfed (800 -> 600)</li>
+                            <li>total boosted movespeed is now 1200 (from 1000)</li>
+                            <li>on-dash/on-attack speedboost is now only given by the 1st attack (of your 4 attack combo) and the 1st dash (of your 3 dash combo)</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        holding the attack button (left click) will now continuosly volley attacks instead of charging your attack
+                    </li>
+
+                    <li>
+                        rebalanced left click attack health and poise damages
+                        <ul>
+                            <li>1st shot now deals significantly more poise damage but retains its normal health damage</li>
+                            <li>2nd, 3rd & 4th volleys now deal significantly more health damage but also deals insignificant poise damage</li>
+                            <li>reduced the spread angle for the 2nd, 3rd and 4th volleys</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        charging is now done automatically when the player isn't doing anything but moving
+                        <ul>
+                            <li>charging needs 4 seconds of not doing anything (except wasd movement) to reach full charge</li>
+                            <li>using any of the action functions (dash, attack, shield) will consume the charge and reset it back to zero</li>
+                            <li>charge scales left click health and poise damages as well as bullet speed and hitbox</li>
+                            <li>maximum charge left click will emit a large green explosion that deals poise damage in a big area (potentially stunning everything in that area)</li>
+                            <li>maximum charge dash will give a 1.5 second invulnerability shield</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        added a placeholder shield function in the right click
+                        <ul>
+                            <li>gives a 1.5 second (2 seconds if fully charged) invulnerability shield</li>
+                            <li>triggers the on-kill machine gun function</li>                            
+                            <li>requires at least 50% of your poise to use</li>
+                            <li>this consumes the entirety of your poise (if you get hit after the shield expires, you will most likely be stunned)</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        nerfed the treshold and cooldown of the on-hit invulnerability shield function, but slightly buffed its duration
+                    </li>
+
+                    <li>
+                        added a rally mechanic to synergize with the on-hit and grit shield functions
+                        <ul>
+                            <li>6% limited lifesteal</li>
+                        </ul>
+                    </li>
+
+                    <li>Minor rebalances to the enemy type, The Swarm</li>
+                </ul>
+           </div>
+        </div>
+    </body>
+</html>
