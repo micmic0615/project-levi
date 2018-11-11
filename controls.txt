@@ -2,6 +2,6 @@ controls:
 
 movement -> wasd
 atacc -> left click
-experimental shield -> right click
+placeholder shield function -> right click
 dash -> spacebar/double tap wasd
 reload game -> escape
